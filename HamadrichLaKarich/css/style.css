@@ -1,0 +1,919 @@
+/*יבוא פונט*/
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+body {
+    direction: rtl;
+}
+
+#container {
+    background-image: url('../images/backgroundWeb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    font-family: 'Varela Round'
+}
+/*----------------------------------------תחילת הגדרת header----------------------------------------*/
+
+
+header
+{
+    height: 120px;
+    color: black;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/*לוגו וטאגליין*/
+.nameWeb {
+    font-size: 18pt;
+    position: relative;
+    margin-right: 65px;
+    padding-top: 20px;
+}
+ header img {
+    width: 60px;
+    height: 58px;
+    margin-top: 5px;
+    float: right
+}
+
+header #rapa {
+    position: relative;
+    top: -30px;
+    margin-top: 20px;
+    background-image: url('../images/Rapa.png');
+    width: 100%;
+    height: 8px;
+}
+
+.tagLine {
+    font-size: 14pt;
+    margin-right: 120px;
+    margin-bottom: 30px;
+}
+
+/*כפתור מעבר לתוכן העמוד*/
+
+#skip {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #f0f0f0;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+    #skip:hover {
+        background-color: #fffefe;
+    }
+
+    /*כפתור חזור למעלה*/
+
+#backTop {
+    text-decoration: none;
+    background-color: #f0f0f0;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    float: left;
+   
+}
+
+    #backTop:hover {
+        background-color: #fffefe;
+    }
+
+
+/*----------------------------------------סוף הגדרת header----------------------------------------*/
+/*הסתרה של אלמנטים לא מפותחים*/
+.notActive {
+    cursor: not-allowed;
+}
+
+/*סימון עמוד נוכחי בתפריט הניווט לצורך התמצאות המשתמש*/
+.currentPage {
+    background-color: #fab906;
+    border-radius: 7px;
+}
+
+/*----------------------------------------תחילת הגדרת תפריטי פירורי לחם בכל העמודים------------------------------------*/
+
+ol.breadcrumb {
+    float: right;
+    margin-top: -100px;
+    margin-right: 10px;
+    list-style: none;
+}
+
+    ol.breadcrumb li {
+        display: inline;
+        font-size: 16px;
+    }
+
+        ol.breadcrumb li + li:before {
+            padding: 8px;
+            color: black;
+            content: "/\00a0";
+        }
+
+        ol.breadcrumb li a {
+            color: #0275d8e6;
+            text-decoration: none;
+        }
+
+            /*מעבר עכבר על תפריט פירורי הלחם*/
+            ol.breadcrumb li a:hover {
+                color: #065190;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+/*----------------------------------------סוף הגדרת תפריטי פירורי לחם בכל העמודים------------------------------------*/
+
+/*----------------------------------------תחילת הגדרת הfooter------------------------------------*/
+
+/*סימון עמוד נוכחי בתפריט הניווט התחתון לצורך התמצאות המשתמש*/
+
+.currentPageServic {
+    font-weight: bold;
+    background-color: #ccccccd1;
+    border-radius: 300px;
+}
+
+#footerNav {
+    width: 100%;
+    height: 30px;
+    background-color: #f0f0f0;
+    padding-top: 10px;
+}
+
+    #footerNav li {
+        list-style-type: none;
+        float: left;
+        padding: 5px;
+    }
+
+        #footerNav li a {
+            color: black;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        /*מעבר עכבר על תפריט הניווט התחתון*/
+            #footerNav li a:hover {
+                color: #0275d8;
+                font-weight: bold;
+                background-color: #ccccccd1;
+                border-radius: 300px;
+            }
+
+/*----------------------------------------סוף הגדרת הfooter------------------------------------*/
+
+
+/*----------------------------------------תחילת הגדרת קרוסלת הניווט שך דף הבית------------------------------------*/
+
+
+.carousel-indicators {
+    width: auto;
+    margin-left: 0;
+    transform: translateX(50%);
+}
+/*באנרים*/
+#sync1 {
+    position: relative;
+    right: 15%;
+}
+
+
+    #sync1 .item {
+        color: #0f0f0f;
+        text-align: right;
+        height: 50%;
+        width: 80%;
+        margin: 0 auto;
+    }
+        #sync1 .item h1 {
+            font-size: 25pt;
+            float: right;
+            padding: 80px;
+            margin-top: 70px;
+        }
+
+        #sync1 .item img {
+            float: left;
+            width: 420px;
+            height: 585px;
+            margin-top: -85px;
+        }
+
+        #sync1 .item a {
+            text-decoration: underline;
+            font-size: 16pt;
+            position: absolute;
+            left: 64%;
+            top: 53%;
+            color: #0a0aae;
+            font-weight: bold;
+        }
+
+            #sync1 .item a:hover {
+                color: #0a0aaea8;
+            }
+
+    #sync1.owl-theme {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+        #sync1.owl-theme .owl-next,
+        #sync1.owl-theme .owl-prev {
+            width: 22px;
+            height: 40px;
+            margin-top: 40px;
+            position: absolute;
+            top: 25%;
+        }
+
+        #sync1.owl-theme .owl-prev {
+            left:5%;
+        }
+
+        #sync1.owl-theme .owl-next {
+            right: -10%;
+        }
+         
+            
+            .owl-dots {
+                visibility: hidden;
+            }
+
+
+.owl-carousel.owl-loaded {
+    display: -webkit-inline-box;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    transition: all .3s ease;
+}
+
+    .owl-theme .owl-nav [class*='owl-'].disabled:hover {
+        background-color: #D6D6D6;
+    }
+
+
+/*תפריט האייקונים של הקרוסלה*/
+#sync2 {
+    margin: 0 auto;
+}
+
+
+    #sync2 .item {
+        color: #FFF;
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+        opacity: 0.4;
+    }
+
+    #sync2 h1 {
+        font-size: 18px;
+        color: black;
+        text-align: center;
+        padding: 5px;
+    }
+
+
+    #sync2 .current .item {
+        opacity: 1;
+    }
+
+
+    #sync2 button {
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        cursor: pointer;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    #sync2 .school {
+        background-image: url('../images/IconSchool.png');
+        background-size: cover;
+        height: 120px;
+        width: 135px;
+        margin-right: -5px;
+        padding-bottom: 17px;
+    }
+
+
+
+    #sync2 .work {
+        background-image: url('../images/IconWork.png');
+        background-size: cover;
+        height: 120px;
+        width: 170px;
+        padding-bottom: 5px;
+    }
+
+    #sync2 .sport {
+        background-image: url('../images/IconSport.png');
+        background-size: cover;
+        height: 120px;
+        width: 120px;
+        position: relative;
+        top: 10px;
+    }
+
+    #sync2 .host {
+        background-image: url('../images/IconHospitality.png');
+        background-size: cover;
+        height: 120px;
+        width: 150px;
+    }
+
+    #sync2 .openAir {
+        background-image: url('../images/IconOpenAir.png');
+        background-size: cover;
+        height: 120px;
+        width: 120px;
+        margin-right: 5px;
+    }
+/*----------------------------------------סוף הגדרת קרוסלת הניווט שך דף הבית------------------------------------*/
+
+
+/*----------------------------------------תחילת הגדרת הצפת הכריכים בעממוד הבית------------------------------------*/
+
+#ad ul {
+    list-style-type: none;
+}
+
+#ad a {
+    text-decoration: none;
+    color: black;
+}
+
+#ad #rapa {
+    background-image: url('../images/Rapa.png');
+    width: 100%;
+    height: 8px;
+    margin-top: 20px;
+}
+
+#gridPic {
+    text-align: center;
+    margin-bottom: 70px;
+}
+#gridPic a img {
+    width: 280px;
+}
+
+
+    #gridPic h1 {
+        font-size: 18pt;
+        margin-top: -50px;
+    }
+
+    #gridPic h3 {
+        font-size: 14pt;
+        margin-top: -50px;
+    }
+    #gridPic ul li {
+        display: inline-block;
+        width: 30%;
+        height: 30%;
+    }
+
+    /*/*אנימציה לתמונות הכריכים*/
+
+    #gridPic li a {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+    }
+
+        #gridPic li a:hover, #gridPic li a:focus, #gridPic li a:active {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+/*----------------------------------------סוף הגדרת הצפת הכריכים בעממוד הבית------------------------------------*/
+
+
+/*----------------------------------------תחילת הגדרת עמוד צור קשר------------------------------------*/
+
+/*תמונת הינשוף בעמוד צור קשר*/
+form #logoContact {
+    float: right;
+    margin-right: 2%;
+    position: relative;
+    right: 7%;
+}
+/*טופס צור קשר*/
+#form {
+    display: inline-block;
+    width: 500px;
+    padding: 50px;
+    padding-right: 150px;
+    overflow: auto;
+    background-color: #fab906;
+    border-radius: 250px;
+    margin: 0 auto;
+    margin-bottom: 8%;
+    text-align: center;
+}
+
+    #form div.row {
+        margin: 5px 5px 5px 5px;
+    }
+
+    #form label {
+        display: block;
+        color: #333;
+        text-shadow: 0 1px 0 white;
+        margin-top: 25px;
+        text-align: right;
+    }
+
+#FirstName {
+    margin-right: 21px;
+}
+
+#contactEmail {
+    margin-right: 43px;
+}
+
+#form input[type=text],
+#form textarea {
+    box-shadow: 0 1px 0 white,inset 0 1px 1px #5555557d;
+    border-radius: 15px;
+    border: 1px solid #999;
+    width: 228px;
+    padding: 5px;
+}
+
+#form textarea {
+    height: 120px;
+}
+
+#form input[type=submit] {
+    box-shadow: inset 0 2px 1px white,inset 0 -1px 2px #555;
+    border-radius: 12px;
+    border: 1px solid #999;
+    padding: 3px 20px;
+    margin: 0px 0px 0px 80px;
+    float: left;
+    cursor: pointer;
+}
+
+    #form input[type=submit]:hover {
+        background: #999;
+        color: #f0f0f0;
+        box-shadow: inset 0 2px 0 #999, 0 1px 1px black;
+    }
+
+article form h1 {
+    font-size: 20pt;
+    margin-bottom: 15px;
+    margin-left: 170px;
+}
+
+.required {
+    color: red;
+    float: right;
+}
+
+/*----------------------------------------סוף הגדרת עמוד צור קשר------------------------------------*/
+/*----------------------------------------תחילת הגדרת עמוד אודותינו------------------------------------*/
+#aboutUsDetails h1 {
+    float: right;
+    font-size: 18pt;
+    margin-top: -50px;
+    margin-right: 46%;
+    text-align: center;
+}
+
+#aboutUsDetails ul {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+    #aboutUsDetails ul li {
+        display: inline-block;
+        text-align: center;
+        width: 140px;
+    }
+
+    /*תמונות מפתחי האתר*/
+#aboutUsDetails .selfImg img {
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#aboutUsDetails img {
+    width: 150px;
+    float: left;
+    margin-left: 40px;
+}
+
+#aboutUsDetails h2 {
+    margin-right: 200px;
+    margin-top: 30px;
+}
+
+#aboutUsDetails p {
+    text-align: center;
+    padding: 5px;
+}
+ /*עיצוב קישורים*/ 
+#aboutUsDetails a {
+    text-decoration: none;
+    color: #0f5590;
+}
+
+    #aboutUsDetails a:hover {
+        color: #063e6e;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+
+/*----------------------------------------סוף הגדרת עמוד אודותינו------------------------------------*/
+
+/*----------------------------------------תחילת הגדרת עמוד מפת האתר------------------------------------*/
+
+
+.SiteMap h1 {
+    float: right;
+    font-size: 18pt;
+    margin-top: -50px;
+    margin-right: 30px;
+}
+
+
+.SiteMap {
+    margin: 20px 30px 30px 0px;
+    font-size: 16px;
+}
+
+
+    .SiteMap a {
+        text-decoration: none;
+        color: #1037a0;
+        font-weight: bold;
+    }
+
+    .SiteMap .notActive {
+        color: #434141d4;
+    }
+
+    .SiteMap ul li h2 {
+        display: inline-block;
+        padding: 5px;
+        background-color: #ffffff85
+    }
+
+    .SiteMap ul {
+        width: 400px;
+    }
+
+    .SiteMap nav ul li a:hover {
+        color: #4498e1;
+        font-weight: bold
+    }
+
+/*----------------------------------------סוף הגדרת עמוד מפת האתר------------------------------------*/
+
+/*----------------------------------------תחילת הגדרת עמוד לימודים------------------------------------*/
+
+#schoolPage {
+    margin-bottom: 50px;
+}
+
+    #schoolPage h2 {
+        margin-right: 14pt;
+        padding: 5px;
+        font-size: 14pt;
+    }
+
+    #schoolPage p {
+        margin-right: 30px;
+        padding: 5px;
+    }
+
+
+    #schoolPage ul li {
+        display: inline-block;
+        width: 30%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    #schoolPage #gridPic p {
+        background-color: #c0c0c0;
+        width: 112px;
+        height: 20px;
+        -webkit-transform: translateY(-20px) translateX(5px) rotate(27deg);
+        position: absolute;
+        top: 75%;
+        left: 10%;
+    }
+
+    #schoolPage #gridPic img {
+        width: 200px;
+        height: 250px;
+    }
+
+    #schoolPage #gridPic a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /*הגדרת כפתור נו תראה לי עוד*/
+.more a {
+    background-color: #f4c33a;
+    width: 120px;
+    text-align: center;
+    margin-right: 85%;
+    text-decoration: none;
+    color: black;
+    border: solid 0.2px -moz-box-shadow: 0px 10px 14px -7px #fab906;
+    -webkit-box-shadow: 0px 10px 14px -7px #fab906;
+    box-shadow: 0px 10px 14px -7px #fab906;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f4c33a), color-stop(1, #f4c33ad9));
+    background: -moz-linear-gradient(top, #f4c33a 5%, #f4c33a 100%);
+    background: -webkit-linear-gradient(top, #f4c33a 5%, #fab906 100%);
+    background: -o-linear-gradient(top, #f4c33a 5%, #fab906 100%);
+    background: -ms-linear-gradient(top, #f4c33a 5%, #fab906 100%);
+    background: linear-gradient(to bottom, #f4c33a 5%, #fab906a6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #d8a71e;
+}
+
+    .more a:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fab906), color-stop(1, #fab906));
+        background: -moz-linear-gradient(top, #f4bc1fc4 5%, #f4c33a 100%);
+        background: -webkit-linear-gradient(top, #f4c33a 5%, #f4c33a 100%);
+        background: -o-linear-gradient(top, #f4c33a 5%, #f4c33a 100%);
+        background: -ms-linear-gradient(top, #f4c33a 5%, #f4c33a 100%);
+        background: linear-gradient(to bottom, #f4c33a 5%, #e7ad0c 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+        background-color: #f4c33a;
+    }
+
+    .more a:active {
+        position: relative;
+        top: 1px;
+    }
+
+    /*כותרות עמודים פנימיים*/
+.banner {
+    background-color: #ffffff57;
+    height: 140px;
+}
+
+    .banner h1 {
+        float: right;
+        font-size: 18pt;
+        margin-top: -40px;
+        margin-right: 30px;
+        opacity: 1;
+    }
+
+    .banner p {
+        margin-right: 30px;
+        font-size: 14pt;
+        width: 500px;
+    }
+
+/*----------------------------------------סוף הגדרת עמוד לימודים------------------------------------*/
+
+/*----------------------------------------תחילת הגדרת עמוד סטודנטים------------------------------------*/
+#studentPage #gridPic li {
+    display: inline-block;
+    width: 30%;
+}
+#category {
+    background-color: #f4c33a2e;
+    width: 100%;
+    float: right;
+}
+
+    #category li a {
+        display: inline-block;
+        float: right;
+        text-decoration: none;
+        color: black;
+        width: 80px;
+        font-size: 16pt;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+        #category li a:hover {
+            background-color: #fab906;
+        }
+
+
+
+#regular h2 {
+    width: 100%;
+    height: 30px;
+    margin-top: 31px;
+    font-size: 14pt;
+    background-color: #fab906;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#regular li a {
+    text-decoration: none;
+    color: black;
+}
+
+#regular li {
+    display: inline-block;
+    width: 500px;
+}
+
+#vegetarian h2 {
+    width: 100%;
+    height: 30px;
+    margin-top: 50px;
+    font-size: 14pt;
+    background-color: #fab906;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#vegetarian li a {
+    text-decoration: none;
+    color: black;
+}
+
+#vegetarian li {
+    display: inline-block;
+    width: 500px;
+}
+
+
+
+#vegan h2 {
+    width: 100%;
+    height: 30px;
+    margin-top: 50px;
+    font-size: 14pt;
+    background-color: #fab906;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#vegan li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#vegan li {
+    display: inline-block;
+    width: 500px;
+}
+
+/*----------------------------------------סוף הגדרת עמוד סטודנטים------------------------------------*/
+
+/*----------------------------------------תחילת הגדרת עמוד מתכון כריך שורשים------------------------------------*/
+
+/*מוצרים*/
+#products {
+    float: right;
+    height: 300px;
+    margin-right: 200px;
+}
+
+    #products h2 {
+        font-size: 14pt;
+        padding: 5px;
+    }
+
+    #products li {
+        list-style-type: none;
+        padding: 5px;
+    }
+
+    /*אופן ההכנה*/
+#orders {
+    margin-top: 200px;
+    height: 500px;
+    float: right;
+    margin-right: -110px;
+}
+
+    #orders h2 {
+        font-size: 14pt;
+        padding: 5px;
+        margin-right: -20px;
+    }
+
+    #orders li {
+        padding: 5px;
+    }
+
+    /*תמונת כריך השורשים*/
+.matconPic {
+    float: left;
+}
+
+    .matconPic img {
+        width: 500px;
+        height: 700px;
+        position: absolute;
+        right: 50%;
+        top: 15%;
+    }
+
+    /*הצפת עוד כריכים בעמוד המתכון*/
+#moreSandwich {
+    margin-top: 40%;
+    margin-bottom: 5%;
+}
+
+    #moreSandwich ul {
+        width: 100%;
+        margin: auto;
+    }
+
+        #moreSandwich ul li {
+            margin-top: 10px;
+            margin-bottom: -100px;
+            margin-right: 20px;
+            list-style-type: none;
+            display: inline-block;
+            background-color: #f0f0f094;
+            height: 250px;
+            width: 200px;
+        }
+
+        #moreSandwich ul img {
+            height: 200px;
+            width: 150px;
+            margin-right: 20px;
+        }
+
+        #moreSandwich ul h2 {
+            margin-top: -20px;
+        }
+
+    #moreSandwich a {
+        text-decoration: none;
+        color: black;
+        margin-bottom: 30;
+    }
+
+    #moreSandwich .more {
+        margin-left: 60px;
+        margin-top: 120px;
+        margin-bottom: 70px;
+    }
+    /*כותרת המתכון*/
+.bannerMatcon {
+    background-color: #ffffffbf;
+    height: 50px;
+}
+
+    .bannerMatcon h1 {
+        float: right;
+        font-size: 18pt;
+        margin-top: -70px;
+        margin-right: 30px;
+    }
+/*----------------------------------------סוף הגדרת עמוד מתכון כריך שורשים------------------------------------*/

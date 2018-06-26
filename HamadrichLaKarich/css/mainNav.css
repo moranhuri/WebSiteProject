@@ -1,0 +1,47 @@
+
+/*הגדרת תפריט ניווט ראשי*/
+.navbar {
+    width: 100%;
+    position: relative;
+}
+
+.nav-menu,
+.nav-submenu {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu-item a {
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-menu > .menu-item {
+    float: right;
+    width: 16%;
+    position: relative;
+    bottom: 30px;
+}
+
+.menu-item a:hover,
+.menu-item a:focus {
+    background-color: #fab906;
+    border-radius: 7px;
+}
+
+.nav-submenu {
+    display: block;
+    visibility: hidden;
+    width: 100%;
+    background-color: #f2f2f2eb;
+}
+
+.nav-menu > .menu-item:hover .nav-submenu,
+.menu-open .nav-submenu {
+    visibility: visible;
+}
